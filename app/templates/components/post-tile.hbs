@@ -16,7 +16,10 @@
 
       {{post.story}}
     </div>
-    {{update-post post=post update="update"}}
-    <button class="btn btn-primary"{{action 'delete' post}}>Delete</button>
+    <div class="edit-buttons">
+      {{update-post post=post update="update"}}
+      <br>
+      <button class="btn btn-primary"{{action 'delete' post}}>Delete</button>
+    </div>
   </li>
 </div>
