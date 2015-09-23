@@ -1,0 +1,20 @@
+.post-image img{
+    width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.author-date {
+  font-style: oblique;
+}
+
+.post-title {
+  font-size: 1.5em;
+}
+
+.post-tile {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}

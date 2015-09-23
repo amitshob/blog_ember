@@ -5,4 +5,11 @@ export default Ember.Route.extend({
     return this.store.findAll('post');
 
   },
+  actions: {
+    destroyPost(post) {
+      post.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
+
 });

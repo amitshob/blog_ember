@@ -1,12 +1,16 @@
 
 <h1> Welcome to Daily Round up </h1>
 
-We hope you find exactly what you're looking for here.
+<p>
+  We hope you find exactly what you're looking for here.
+</p>
 
-<ul>
-  {{#each model as |post|}}
-    {{post-tile post=post}}
-  {{/each}}
-</ul>
+<div class="row">
+  <ul>
+    {{#each model as |post|}}
+      {{post-tile post=post destroyPost="destroyPost"}}
+    {{/each}}
+  </ul>
+</div>
 
 {{outlet}}

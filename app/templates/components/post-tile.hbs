@@ -1,1 +1,21 @@
-<li>{{post.postTitle}}</li>
+<div class="col-xs-6">
+  <li>
+    <div class="post-tile">
+      <div class="post-title">
+        {{post.postTitle}}
+      </div>
+
+      <div class="post-image">
+        <img src={{post.image}}>
+      </div>
+
+      <div class="author-date">
+        {{post.author}}
+        {{post.date}}
+      </div>
+
+      {{post.story}}
+    </div>
+    <button {{action 'delete' post}}>Delete</button>
+  </li>
+</div>
