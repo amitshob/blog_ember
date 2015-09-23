@@ -1,0 +1,28 @@
+<form>
+  <div class="form-group">
+    <label for="postTitle">Post Title</label>
+    {{input value=postTitle id="postTitle"}}
+  </div>
+
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+  </div>
+
+  <div class="form-group">
+    <label for="date">Date</label>
+    {{input value=date id="date"}}
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image URL</label>
+    {{input value=image id="image"}}
+  </div>
+
+  <div class="form-group">
+    <label for="story">Story</label>
+    {{input value=story id="story"}}
+  </div>
+
+  <button {{action 'save1'}}>Save</button>
+</form>
