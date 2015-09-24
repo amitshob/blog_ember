@@ -11,7 +11,7 @@ export default Ember.Component.extend({
          story: this.get('story'),
        };
        this.sendAction('save2',params);
-       debugger;
+       
     }
   }
 });

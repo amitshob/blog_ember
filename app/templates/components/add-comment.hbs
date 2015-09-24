@@ -1,0 +1,25 @@
+<form>
+
+    <div class="username">
+
+        <div class="username">
+          <label for="username">Username</label>
+          {{input value=username id="username"}}
+        </div>
+
+      <div class="date">
+        <label for="date">date</label>
+        {{input value=date id="date"}}
+      </div>
+
+      <div class="comment">
+        <label for="comment">Comment</label>
+        {{input value=comment id="comment"}}
+      </div>
+    <button {{action 'submit'}}>Submit</button>
+
+    </div>
+
+</form>
+
+{{yield}}
