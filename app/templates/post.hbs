@@ -1,17 +1,22 @@
-<h2>{{model.postTitle}}</h2>
+<h2>{{model.post.postTitle}}</h2>
 
 <div class="post-image">
-  <img src={{model.image}}>
+  <img src={{model.post.image}}>
 </div>
 <div class="post-info">
-  {{model.date}}
-  {{model.author}}
+  {{model.post.date}}
+  {{model.post.author}}
 </div>
 <div class="post-story">
-  {{model.story}}
+  {{model.post.story}}
 </div>
 
-{{add-comment submit="submit"}}
+{{add-comment submit="submit" post=model.post}}
 
+<ul>
+  {{#each model.post.comments as |comment|}}
+    {{display-comments comment=comment }}
+  {{/each}}
+</ul>
 
 {{outlet}}
