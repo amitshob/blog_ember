@@ -1,14 +1,15 @@
 <div class="col-xs-6">
   <li>
     <div class="post-tile">
-      <div class="post-title">
-        {{post.postTitle}}
-      </div>
+      {{#link-to 'post' post.id}}
+        <div class="post-title">
+          {{post.postTitle}}
+        </div>
 
-      <div class="post-image">
-        <img src={{post.image}}>
-      </div>
-
+        <div class="post-image">
+          <img src={{post.image}}>
+        </div>
+      {{/link-to}}
       <div class="author-date">
         {{post.author}}
         {{post.date}}
